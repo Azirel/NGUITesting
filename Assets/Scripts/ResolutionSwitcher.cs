@@ -26,4 +26,10 @@ public class ResolutionSwitcher : MonoBehaviour
 		var gvWnd = UnityEditor.EditorWindow.GetWindow(gvWndType);
 		selectedSizeIndexProp.SetValue(gvWnd, index, null);
 	}
+
+	protected void Update()
+	{
+		if (Input.GetKeyDown(SwitchResolutionKey))
+			SwapWidthWithHeight();
+	}
 }
