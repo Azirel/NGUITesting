@@ -15,7 +15,7 @@ public class ResolutionSwitcher : MonoBehaviour
 		var temp = UIRoot.manualWidth;
 		UIRoot.manualWidth = UIRoot.manualHeight;
 		UIRoot.manualHeight = temp;
-		SetSize(UIRoot.manualWidth == 1080 ? 5 : 6);
+		SetSize(UIRoot.manualWidth == 1080 ? 8 : 7);
 	}
 
 	public static void SetSize(int index)
